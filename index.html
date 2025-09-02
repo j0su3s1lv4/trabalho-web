@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho de ADS</title>
+  <style>
+    /* cor de fundo do site */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background-color: rgb(206, 246, 242);
+    }
+
+    /* cabeçalho fixo em cima */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    /* menu do cabeçalho */
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* links do menu */
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* sections ocupam a tela toda */
+    section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      scroll-margin-top: 80px;
+    }
+
+    /* centralizar os titulos */
+    h1, h2, h3, h4 {
+      text-align: center;
+    }
+
+    /* estilo dos quadrados do portfolio */
+    .portfolio-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      background: #fff; /* cor branca nos card */
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    /* estilo do formulario */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    
+    form input, form textarea, form button {
+      margin: 5px 0;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    /* rodapé */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* estilos de lista de hobbies com imagens */
+    #hobbies ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #hobbies li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- menu de navegação -->
+  <header>
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- parte sobre mim -->
+  <section id="sobre">
+    <h1>Josue Silva Souza</h1>
+    <h2>Sobre mim</h2>
+    <p>Olá, eu sou o Josué. Gosto de mexer em computador e jogar alguns jogos.
+       Eu ainda não sei programar muito bem, mas estou aprendendo aos poucos.  
+       Algumas das minhas qualidades são ser dedicado, curioso, muito curioso e sempre querer aprender coisas novas. 
+       Esse site é meu portfólio que fiz para o trabalho.</p>
+  </section>
+
+  <!-- hobbies -->
+    <h2>Meus hobbies</h2>
+    <ul> 
+      <li>Jogar</li>
+      <li>Ver filmes e séries</li>
+      <li>Jogar bola</li>
+      <li>Mexer no computador</li>
+      <li>Passear de moto</li>
+    </ul>
+
+  </section>
+
+  <!-- profissões -->
+  <section id="profissoes">
+    <h2>Profissões que eu exerço no momento</h2>
+    <ul>
+      <li>Entregador</li>
+      <li>Mecânico de máquina industrial</li>
+    </ul>
+    <p>Trabalho como entregador de pizza. As vezes é cansativo não vou mentir, mas dá um retorno bom.</p>
+    <p>Também trabalho como mecânico de máquinas industriais, consertando e fazendo manutenção em máquinas usadas na indústria.</p>
+  </section>
+
+  <!-- formação e idiomas -->
+  <section id="formacao">
+    <h2>Formação e Idiomas</h2>
+    <p>Eu estudei até o ensino médio e agora estou fazendo curso de programação.
+      Ainda não sei muito, mas estou treinando sempre que posso. Em idiomas, eu 
+      falo português e entendo pouco de inglês, mas ainda não consigo falar bem.</p>
+  </section>
+
+  <!-- portfolio -->
+  <section id="portfolio">
+    <h3>Meu Portfólio</h3>
+    <p>Aqui os sites direto pras coisas que gosto de ver (ou assistir/ouvir).</p>
+
+    <div class="portfolio-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Honda-logo.png" alt="Honda" width="100">
+        <h4>Site da Honda</h4>
+        <p>Eu curto ver  motos, então tome esse site.</p>
+        <a href="https://www.honda.com.br/" target="_blank">Visitar site</a>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" width="100">
+        <h4>yt</h4>
+        <p>Entro direto para ver vídeos e música.</p>
+        <a href="https://www.youtube.com/" target="_blank">Visitar site</a>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" width="100">
+        <h4>Netflix</h4>
+        <p>Gosto de ver filmes e séries.</p>
+        <a href="https://www.netflix.com/br/" target="_blank">Visitar site</a>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Portfólio" width="100">
+        <h4>Meu Portfólio de Programação</h4>
+        <p>Aqui está um dos projetos que fiz durante o curso de análise e desenvolvimento de software.</p>
+        <a href="https://j0su3s1lv4.github.io/fundamentos-de-soft/" target="_blank">Visitar site</a>
+    </div>
+  </section>
+
+  <!-- formulario de contato -->
+  <section id="contato">
+    <h3>Contato</h3>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- rodapé -->
+  <footer>
+    <p>Site desenvolvido por Josue Silva - RU 5185552</p>
+  </footer>
+
+  <script>
+    // função que mostra alerta quando enviar o formulario
+    function enviarFormulario(e){
+      e.preventDefault();
+      alert("Formulário enviado (Obrigado por entrar em contato! ^-^)");
+    }
+  </script>
+</body>
+</html>
